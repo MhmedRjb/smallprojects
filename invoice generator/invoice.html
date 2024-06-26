@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-body { 
-    font-family: Arial; 
-    margin: 3.75em; 
-    margin-top:2.5em ;
-    padding: 1.25em; 
+body {
+    font-family: Arial;
+    margin: 0; 
+    padding: 3.25em;
     color: #464545;
-    background-color: #f9f9f9; 
-    width: 210mm; 
-    height: 297mm; 
+    background-color: #f9f9f9;
+    width: 210mm;
+    height: 297mm;
+    text-align: right; /* Adjust text alignment for RTL */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
-
 .brand-logo {
     width: 100px; 
     height: auto; 
-    margin-left: 0.5em; /* Space between brand name and logo */
+    margin-right: 0.5em; /* Space between brand name and logo */
+    vertical-align: middle; /* Align logo vertically with text */
+}
+.qr {
+    width: 100px; 
+    height: auto; 
     vertical-align: middle; /* Align logo vertically with text */
 }
 
 .invoice-container {
-    max-width: 100%; 
     margin: auto;
     background: #fff;
-    padding: 1.25em 2.5em; /* 20px 40px equivalent */
-
+    padding: 1.25em 2.5em;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
 .invoice-header { 
@@ -41,14 +45,14 @@ body {
 
 .invoice-details { 
     background-color: #face0d;
-    padding: 0 0.9375em 0.9375em 1.25em; /* 0 15px 15px 20px equivalent */
-    margin-top: 2em; /* Adjust the value as needed to move the section down */
+    padding: 0 1.25em 0.9375em 0.9375em; 
+    margin-top: 2em; 
 }
 
 .invoice-header h2 {
-    font-size: 2.25em; /* 36px equivalent */
+    font-size: 2.25em; 
     font-weight: bold;
-    letter-spacing: 0.22em; /* 2px equivalent */
+    letter-spacing: 0.22em; 
     margin-bottom: 0;
     margin-top: 0.3em;
 }
@@ -58,9 +62,9 @@ body {
 }
 
 .invoice-header h1 {
-    font-size: 2.25em; /* 36px equivalent */
+    font-size: 2.25em;
     font-weight: bold;
-    letter-spacing: 0.125em; /* 2px equivalent */
+    letter-spacing: 0.125em; 
     margin-bottom: 0;
 }
 
@@ -81,7 +85,7 @@ table {
 }
 th, td { 
     padding: 12px; 
-    text-align: left; 
+    text-align: right; 
     border-bottom: 1px solid #ddd; 
 }
 th { 
@@ -96,65 +100,66 @@ div, .terms div {
 }
 
 .signature-border {
-            display: inline-block;
-            border-top: 1px solid #000; /* Adds a border above the text */
-            padding-top: 10px; /* Adds some space between the border and the text */
-            width: 50%; /* Adjust this value to make the border shorter */
-            
-        }
+    display: inline-block;
+    border-top: 1px solid #000;
+    padding-top: 10px; 
+    width: 50%; 
+}
 
 .summary-payment {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            font-family: Arial, sans-serif;
-            margin-bottom: 2em; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+}
 
-        }
-        .connect-us {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            font-family: Arial, sans-serif;
-        }
-        .signature-info {
-            width: 50%;
-            text-align: center;
-        }
-        .signature-info p {
-            display: inline-block;
-            border-top: 1px solid #000; /* Adds a border above the text */
-            padding-top: 10px; /* Adds some space between the border and the text */
-            width: 150px; /* Adjust this value to make the border shorter */
-            margin: 0 auto; /* Center the border */
-        }
+.connect-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: Arial, sans-serif;
+}
 
-        .payment-info {
-            width: 45%;
-        }
-        .invoice-summary {
-            width: 45%;
-        }
-        .invoice-summary h4, .invoice-summary h5, .invoice-summary h2 {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 0;
-        }
-        .label {
-            text-align: right;
-            display: inline-block;
-            width: 50%; /* Adjust this value as needed */
-        }
-        .value {
-            text-align: right;
-        }
+.signature-info {
+    width: 50%;
+    text-align: center;
+}
 
+.signature-info p {
+    display: inline-block;
+    border-top: 1px solid #000; 
+    padding-top: 10px; 
+    width: 150px; 
+    margin: 0 auto; 
+}
 
+.payment-info {
+    width: 45%;
+}
+
+.invoice-summary {
+    width: 45%;
+}
+
+.invoice-summary h4, .invoice-summary h5, .invoice-summary h2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 10px;
+}
+
+.label {
+    text-align: left;
+    display: inline-block;
+    width: 50%; 
+}
+
+.value {
+    text-align: right;
+}
 
 .payment-info {
     padding: 10px;
 }
-
 
 .payment-info p:first-child {
     background-color: #face0d; 
@@ -162,18 +167,35 @@ div, .terms div {
 }
 
 .connect-us, .footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            font-family: Arial, sans-serif;
-        }
-        .payment-info, .terms {
-            width: 45%;
-        }
-        .thank-you h2 {
-            text-align: right;
-        }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: Arial, sans-serif;
+}
 
+.payment-info, .terms {
+    width: 45%;
+}
+
+.thank-you h2 {
+    text-align: right;
+}
+
+
+.invoice-container, .invoice-header, .summary-payment, .connect-us, .footer {
+    page-break-inside: avoid; /* Prevents page breaks inside these elements */
+}
+table, tr, td, th {
+    page-break-inside: avoid; /* Prevents page breaks inside table rows */
+}
+.summary-payment {
+    page-break-before: always; /* Forces a page break before these elements */
+
+}
+
+.invoice-container, .invoice-header, .summary-payment, .connect-us, .footer {
+    page-break-inside: avoid; /* Prevents page breaks inside these elements */
+}
 
     </style>
 </head>
@@ -181,18 +203,18 @@ div, .terms div {
     <div class="invoice-container">
         <div class="invoice-header">
             <div>
-                <h1>Brand Name</h1>
+                <h1>اسم العلامة التجارية</h1>
                 <img src="7.jpg" alt="Logo" class="brand-logo">
-                <p><strong>Bill To:</strong></p>
-                <p>Company Name</p>
-                <p>24 Lorem Street Area,Lorem Ipsum 75484x</p>
+                <p><strong>تفوتر إلى:</strong></p>
+                <p>اسم الشركة</p>
+                <p>24 شارع لوريم، منطقة لوريم إيبسوم 75484x</p>
             </div>
             <div class="invoice-details">
-                <h2 >INVOICE</h2>
-                <h4 >Invoice details</h4>
-                <p> Invoice Date: 01/01/2020</p>
-                <p>Due Date: 10/01/2020</p>
-                <p>Invoice No: 494512</p>
+                <h2 >فاتورة</h2>
+                <h4 >تفاصيل الفاتورة</h4>
+                <p> تاريخ الفاتورة: 1 يناير 2020</p>
+                <p>تاريخ الاستحقاق: 10 يناير 2020</p>
+                <p>رقم الفاتورة: 494512</p>
             </div>
         </div>
         
@@ -201,52 +223,52 @@ div, .terms div {
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Product Description</th>
-                        <th>Unit Price</th>
-                        <th>Qty</th>
-                        <th>Total</th>
+                        <th>وصف المنتج</th>
+                        <th>سعر الوحدة</th>
+                        <th>الكمية</th>
+                        <th>الإجمالي</th>
                     </tr>
                 </thead>
                 <tbody>
                     
                     <tr>
                         <td>1</td>
-                        <td>Flyer Design</td>
-                        <td>10.00</td>
+                        <td>تصميم نشرة</td>
+                        <td>$10</td>
                         <td>1</td>
-                        <td>10.00</td>
+                        <td>$10</td>
                     </tr>
                     
                     <tr>
                         <td>2</td>
-                        <td>Brochure Design</td>
-                        <td>5.00</td>
+                        <td>تصميم كتيب</td>
+                        <td>$5</td>
                         <td>2</td>
-                        <td>10.00</td>
+                        <td>$10</td>
                     </tr>
                     
                     <tr>
                         <td>3</td>
-                        <td>Business Card</td>
-                        <td>15.00</td>
+                        <td>بطاقة أعمال</td>
+                        <td>$15</td>
                         <td>3</td>
-                        <td>45.00</td>
+                        <td>$45</td>
                     </tr>
                     
                     <tr>
                         <td>4</td>
-                        <td>Lorem Ipsum Design</td>
-                        <td>25.00</td>
+                        <td>تصميم لوريم إيبسوم</td>
+                        <td>$25</td>
                         <td>4</td>
-                        <td>100.00</td>
+                        <td>$100.00</td>
                     </tr>
                     
                     <tr>
                         <td>5</td>
-                        <td>Lorem Ipsum Design</td>
-                        <td>10.00</td>
+                        <td>تصميم لوريم إيبسوم</td>
+                        <td>$10</td>
                         <td>5</td>
-                        <td>50.00</td>
+                        <td>$50.00</td>
                     </tr>
                     
                 </tbody>
@@ -255,42 +277,43 @@ div, .terms div {
 
         <div class="summary-payment">
             <div class="payment-info">
-                <p><strong>Payment Info:</strong></p>
-                <p>Account #: 123456789</p>
-                <p>Account Name: Lorem Ipsum</p>
-                <p>Bank Details: Add your Bank</p>
+                <p><strong>معلومات الدفع:</strong></p>
+                <p>رقم الحساب: 123456789</p>
+                <p>اسم الحساب: لوريم إيبسوم</p>
+                <p>تفاصيل البنك: أضف تفاصيل بنكية</p>
             </div>
     
             <div class="invoice-summary">
-                <h4><span class="label">Sub Total:</span> <span class="value">535.00</span></h4>
-                <h5><span class="label">Tax (5%):</span> <span class="value">0.00</span></h5>
-                <h2><span class="label">Grand Total:</span> <span class="value">535.00</span></h2>
-                <img src="zap-qr-1.png" alt="Logo" class="brand-logo">
-
+                <h4><span class="label">المجموع الفرعي:</span> <span class="value">$535</span></h4>
+                <h5><span class="label">الضريبة (5%):</span> <span class="value">$0.00</span></h5>
+                <h2><span class="label">المجموع الكلي:</span> <span class="value">$535</span></h2>
+                <img src="zap-qr-1.png" alt="Logo" class="qr">
             </div>
         </div>
     
         <div class="connect-us">
             <div class="payment-info">
-                <p><strong>Contact Us:</strong></p>
+                <p><strong>اتصل بنا:</strong></p>
                 <div><i class="fas fa-phone"></i> 1234-567-890</div>
                 <div><i class="fas fa-globe"></i> yourbusinesswebsite.com</div>
                 <div><i class="fas fa-envelope"></i> your@email.com</div>
-                <div><i class="fas fa-map-marker-alt"></i> Lorem Ipsum - 40</div>
+                <div><i class="fas fa-map-marker-alt"></i> لوريم إيبسوم - 40</div>
             </div>
             <div class="signature-info">
-                <p>Signature</p>
+                <p>التوقيع</p>
             </div>
-                </div>
-                <div class="footer">
-                    <div class="terms">
-                        <h4>Terms & Conditions:</h4>
-                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt.</h6>
-                    </div>
-                    <div class="tahnk">
-                        <h2>Thank You</h2>
-                    </div>
-            
+        </div>
+        
+        <div class="footer">
+            <div class="terms">
+                <h4>الشروط والأحكام:</h4>
+                <h6>لوريم إيبسوم يعني نص بمعنى السخرية والنقد باللاتينية، ويعود تاريخه إلى القرن الأول الميلادي</h6>
+            </div>
+            <div class="thank-you">
+                <h2>شكرًا لك</h2>
+            </div>
+        </div>
+                    
 
 
 

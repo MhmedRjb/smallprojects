@@ -1,43 +1,36 @@
 import qrcode
 import json
 
-# Example JSON data
-data = {
-    "invoice_id": "INV-12345",
-    "date": "2024-06-26",
-    "due_date": "2024-07-26",
-    "seller": {
-        "name": "ABC Company",
-        "email": "contact@abccompany.com",
-        "phone": "+20 123 456 7890"
-    },
-    "buyer": {
-        "name": "XYZ Enterprises",
-        "email": "info@xyzenterprises.com",
-        "phone": "+20 987 654 3210"
-    },
-    "items": [
-        {
-            "description": "Product 1",
-            "quantity": 2,
-            "unit_price": 50.00,
-            "total": 100.00
-        },
-        {
-            "description": "Product 2",
-            "quantity": 1,
-            "unit_price": 150.00,
-            "total": 150.00
-        }
+# Example JSON data with Arabic text
+context = {
+    'brand_name': 'اسم العلامة التجارية',
+    'company_name': 'اسم الشركة',
+    'address': '24 شارع لوريم، منطقة لوريم إيبسوم 75484x',
+    'invoice_date': '1 يناير 2020',
+    'due_date': '10 يناير 2020',
+    'invoice_no': '494512',
+    'items': [
+        {'description': 'تصميم نشرة', 'unit_price': '$10', 'qty': 1, 'total': '$10'},
+        {'description': 'تصميم كتيب', 'unit_price': '$5', 'qty': 2, 'total': '$10'},
+        {'description': 'بطاقة أعمال', 'unit_price': '$15', 'qty': 3, 'total': '$45'},
+        {'description': 'تصميم لوريم إيبسوم', 'unit_price': '$25', 'qty': 4, 'total': '$100.00'},
+        {'description': 'تصميم لوريم إيبسوم', 'unit_price': '$10', 'qty': 5, 'total': '$50.00'},
     ],
-    "subtotal": 250.00,
-    "tax": 25.00,
-    "total": 275.00,
-    "status": "Unpaid"
+    'sub_total': '$535',
+    'tax': '$0.00',
+    'grand_total': '$535',
+    'account_no': '123456789',
+    'account_name': 'لوريم إيبسوم',
+    'bank_details': 'أضف تفاصيل بنكية',
+    'phone': '1234-567-890',
+    'website': 'yourbusinesswebsite.com',
+    'email': 'your@email.com',
+    'contact_address': 'لوريم إيبسوم - 40',
+    'terms': 'لوريم إيبسوم يعني نص بمعنى السخرية والنقد باللاتينية، ويعود تاريخه إلى القرن الأول الميلادي',
 }
 
 # Convert JSON data to a string
-json_data = json.dumps(data)
+json_data = json.dumps(context, ensure_ascii=False)
 
 # Generate QR code
 qr = qrcode.QRCode(
@@ -53,4 +46,4 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white")
 
 # Save the image
-img.save("invoice_qr.png")
+img.save("zap-qr-1.png")
