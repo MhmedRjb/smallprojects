@@ -4,7 +4,7 @@ from jinja2 import Template
 context = {
     'brand_name': 'Brand Name',
     'company_name': 'Company Name',
-    'address': '24 Lorem Street Area, Location, Lorem Ipsum 75484x',
+    'address': '24 Lorem Street Area,Lorem Ipsum 75484x',
     'invoice_date': '01/01/2020',
     'due_date': '10/01/2020',
     'invoice_no': '494512',
