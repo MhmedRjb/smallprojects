@@ -2,9 +2,9 @@ from jinja2 import Template
 
 # Context data
 context = {
-    'brand_name': 'اسم العلامة التجارية',
-    'company_name': 'اسم الشركة',
-    'address': '24 شارع لوريم، منطقة لوريم إيبسوم 75484x',
+    'brand_name': 'شركة الـــفــــولاني',
+    'company_name': 'شركة العــــلاني',
+    'address': '24 شارع النصر تفرع مصطفي صدقي -مدينة الهدى -القاهرة',
     'invoice_date': '1 يناير 2020',
     'due_date': '10 يناير 2020',
     'invoice_no': '494512',
@@ -19,13 +19,13 @@ context = {
     'tax': '$0.00',
     'grand_total': '$535',
     'account_no': '123456789',
-    'account_name': 'لوريم إيبسوم',
+    'account_name': 'فولاني ابن علاني',
     'bank_details': 'أضف تفاصيل بنكية',
     'phone': '1234-567-890',
     'website': 'yourbusinesswebsite.com',  # لا توجد ترجمة محددة لاسم الموقع في هذا السياق
     'email': 'your@email.com',
-    'contact_address': 'لوريم إيبسوم - 40',
-    'terms': 'لوريم إيبسوم يعني نص بمعنى السخرية والنقد باللاتينية، ويعود تاريخه إلى القرن الأول الميلادي',
+    'contact_address': 'عمر مدينة نصر  - 40',
+    'terms': 'تطبق الشروط والأحكام المتفق عليها طبقا للقواعد ',
 }
 
 # Load the template

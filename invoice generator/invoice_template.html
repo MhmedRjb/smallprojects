@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+          @import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+  /* font-family: 'Lateef', serif; */
+
+        
 body {
-    font-family: Arial;
+    font-family: 'Lateef';
     margin: 0; 
     padding: 3.25em;
     color: #464545;
@@ -47,12 +52,12 @@ body {
     background-color: #face0d;
     padding: 0 1.25em 0.9375em 0.9375em; 
     margin-top: 2em; 
+    
 }
 
 .invoice-header h2 {
     font-size: 2.25em; 
     font-weight: bold;
-    letter-spacing: 0.22em; 
     margin-bottom: 0;
     margin-top: 0.3em;
 }
@@ -64,7 +69,6 @@ body {
 .invoice-header h1 {
     font-size: 2.25em;
     font-weight: bold;
-    letter-spacing: 0.125em; 
     margin-bottom: 0;
 }
 
@@ -75,7 +79,11 @@ body {
 
 .invoice-header h4 {
     margin-top: 0;
+    margin-bottom: 0;
     font-weight: normal;
+}
+.invoice-header p {
+    margin: 0;
 }
 
 table { 
@@ -95,9 +103,7 @@ th {
 .total { 
     font-weight: bolder; 
 }
-div, .terms div { 
-    margin: 5px 0; 
-}
+
 
 .signature-border {
     display: inline-block;
@@ -110,14 +116,12 @@ div, .terms div {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-family: Arial, sans-serif;
 }
 
 .connect-us {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    font-family: Arial, sans-serif;
 }
 
 .signature-info {
@@ -141,10 +145,18 @@ div, .terms div {
     width: 45%;
 }
 
-.invoice-summary h4, .invoice-summary h5, .invoice-summary h2 {
+.invoice-summary h4, .invoice-summary h5 {
     display: flex;
     justify-content: space-between;
     margin: 10px 0 10px 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ .invoice-summary h2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 10px 10px;
 }
 
 .label {
@@ -170,7 +182,6 @@ div, .terms div {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    font-family: Arial, sans-serif;
 }
 
 .payment-info, .terms {
@@ -179,6 +190,28 @@ div, .terms div {
 
 .thank-you h2 {
     text-align: right;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.info-item i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.info-values {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-values span {
+  font-size: 16px;
+  color: #555;
 }
 
 
@@ -210,7 +243,7 @@ table, tr, td, th {
                 <p>{{ address }}</p>
             </div>
             <div class="invoice-details">
-                <h2 >فاتورة</h2>
+                <h2 >فـــــــــاتــــــورة</h2>
                 <h4 >تفاصيل الفاتورة</h4>
                 <p> تاريخ الفاتورة: {{ invoice_date }}</p>
                 <p>تاريخ الاستحقاق: {{ due_date }}</p>
@@ -250,24 +283,49 @@ table, tr, td, th {
                 <p>اسم الحساب: {{ account_name }}</p>
                 <p>تفاصيل البنك: {{ bank_details }}</p>
             </div>
-    
+            <img src="zap-qr-1.png" alt="Logo" class="qr">
+
             <div class="invoice-summary">
                 <h4><span class="label">المجموع الفرعي:</span> <span class="value">{{ sub_total }}</span></h4>
                 <h5><span class="label">الضريبة (5%):</span> <span class="value">{{ tax }}</span></h5>
                 <h2><span class="label">المجموع الكلي:</span> <span class="value">{{ grand_total }}</span></h2>
-                <img src="zap-qr-1.png" alt="Logo" class="qr">
             </div>
+
         </div>
     
         <div class="connect-us">
             <div class="payment-info">
                 <p><strong>اتصل بنا:</strong></p>
-                <div><i class="fas fa-phone"></i> {{ phone }}</div>
-                <div><i class="fas fa-globe"></i> {{ website }}</div>
-                <div><i class="fas fa-envelope"></i> {{ email }}</div>
-                <div><i class="fas fa-map-marker-alt"></i> {{ contact_address }}</div>
-            </div>
-            <div class="signature-info">
+                <div class="info-item">
+                  <i class="fa fa-phone-square"></i>
+                  <div class="info-values">
+                    <span>{{ phone }}</span>
+                    <span>{{ phone }}</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-globe"></i>
+                  <div class="info-values">
+                    <span>{{ website }}</span>
+                    <span>{{ website }}</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-envelope"></i>
+                  <div class="info-values">
+                    <span>{{ email }}</span>
+                    <span>{{ email }}</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="info-values">
+                    <span>{{ contact_address }}</span>
+                    <span>{{ contact_address }}</span>
+                  </div>
+                </div>
+              </div>
+                                        <div class="signature-info">
                 <p>التوقيع</p>
             </div>
         </div>
