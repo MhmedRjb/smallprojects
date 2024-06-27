@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./Module 3_ SQL:/Module 3_ SQL  # Mount local folder to container
+
+  workbench:
+    image: lscr.io/linuxserver/mysql-workbench:latest
+    container_name: mysql-workbench
+    environment:
+      PUID: 1000
+      PGID: 1000
+      TZ: Etc/UTC
+    ports:
+      - "3000:3000" 
+      - "3001:3001"
+    volumes:
+      - ./config:/config
+      - ./Module 3_ SQL:/Module 3_ SQL  # Mount local folder to container
+    depends_on:
+      - mysql
+
+volumes:
+  mysql-data:

@@ -1,0 +1,9 @@
+[1, 21:07:53] select 1
+LIMIT 0, 1000
+: Running...
+[1, 21:07:53] select 1
+LIMIT 0, 1000
+: Fetching...
+[1, 21:07:53] select 1
+LIMIT 0, 1000
+: 1 row(s) returned
