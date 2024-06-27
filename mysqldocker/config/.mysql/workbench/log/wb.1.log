@@ -1,4 +1,4 @@
-15:29:33 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+21:49:31 [INF][   WBContext UI]: Initializing workbench context UI with these values:
 	base dir: /usr/share/mysql-workbench
 	plugin path: /usr/lib/mysql-workbench/plugins
 	struct path: /usr/share/mysql-workbench/grt
@@ -12,14 +12,12 @@
 	Force SW rendering: No
 	Force OpenGL: No
 	quit when done: No
-15:29:33 [INF][      WBContext]: WbContext::init
-15:29:34 [INF][            WBA]: Looking for extension modules for WBA...
-15:29:34 [INF][            WBA]: 0 extension modules found
-15:29:35 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-15:29:35 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:18: link '523bf628-32a8-11ef-824e-0242ac1e0003' <object db.mgmt.Connection> key=connection could not be resolved
-15:29:35 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:24: link '48f17494-32a8-11ef-824e-0242ac1e0003' <object GrtObject> key=owner could not be resolved
-15:29:35 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-15:29:35 [INF][      WBContext]: System info:
+21:49:31 [INF][      WBContext]: WbContext::init
+21:49:31 [INF][            WBA]: Looking for extension modules for WBA...
+21:49:31 [INF][            WBA]: 0 extension modules found
+21:49:32 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+21:49:32 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+21:49:32 [INF][      WBContext]: System info:
  	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.36 CE build 3737333 (64 bit)
 	Configuration Directory: /config/.mysql/workbench
 	Data Directory: /usr/share/mysql-workbench
@@ -31,5 +29,22 @@ No video adapter info available
 
 	Fips mode enabled: no
 
-15:29:35 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
-15:29:36 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
+21:49:32 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
+21:49:32 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-2.autosave
+21:49:32 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-3.autosave
+21:49:32 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-4.autosave
+21:49:32 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-5.autosave
+21:49:32 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-6.autosave
+21:49:32 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
+21:50:10 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'172.31.0.3' (using password: YES)
+21:50:10 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'172.31.0.3' (using password: YES)
+21:50:10 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'172.31.0.3' (using password: YES)
+21:50:10 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'172.31.0.3' (using password: YES)
+21:50:13 [INF][SQL Editor Form]: Opened connection '' to MySQL Community Server - GPL version 8.0.37
+21:50:13 [INF][          Admin]: Auto-created dummy instance profile for remote connection 
+21:50:18 [WRN][   WBContext UI]: Server instance  has no attached connection, deleting it
+21:50:18 [WRN][   WBContext UI]: Server instance  has no attached connection, deleting it
+21:50:18 [WRN][   WBContext UI]: Server instance  has no attached connection, deleting it
+21:50:18 [WRN][   WBContext UI]: Server instance  has no attached connection, deleting it
+21:51:32 [WRN][   mforms.linux]: Unknown column storage type[20]
+21:51:32 [WRN][   mforms.linux]: Unknown column storage type[20]
