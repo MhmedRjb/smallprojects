@@ -5,12 +5,12 @@ services:
     image: mysql:8.0
     container_name: mysql-container
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: admin
     ports:
       - "3306:3306"
     volumes:
       - mysql-data:/var/lib/mysql
-      - ./Module 3_ SQL:/Module 3_ SQL  # Mount local folder to container
+      - ./data:/data  # Mount local folder to container
 
   workbench:
     image: lscr.io/linuxserver/mysql-workbench:latest
@@ -24,7 +24,7 @@ services:
       - "3001:3001"
     volumes:
       - ./config:/config
-      - ./Module 3_ SQL:/Module 3_ SQL  # Mount local folder to container
+      - ./data:/data  # Mount local folder to container
     depends_on:
       - mysql
 

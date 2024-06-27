@@ -1,4 +1,4 @@
-03:56:57 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+21:37:34 [INF][   WBContext UI]: Initializing workbench context UI with these values:
 	base dir: /usr/share/mysql-workbench
 	plugin path: /usr/lib/mysql-workbench/plugins
 	struct path: /usr/share/mysql-workbench/grt
@@ -12,14 +12,15 @@
 	Force SW rendering: No
 	Force OpenGL: No
 	quit when done: No
-03:56:57 [INF][      WBContext]: WbContext::init
-03:56:58 [INF][            WBA]: Looking for extension modules for WBA...
-03:56:58 [INF][            WBA]: 0 extension modules found
-03:56:58 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-03:56:58 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:5: link '67d7f894-32a6-11ef-8a70-0242ac150003' <object db.mgmt.Connection> key=connection could not be resolved
-03:56:58 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:17: link '5895c690-32a6-11ef-8a70-0242ac150003' <object GrtObject> key=owner could not be resolved
-03:56:58 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-03:56:58 [INF][      WBContext]: System info:
+21:37:34 [INF][      WBContext]: WbContext::init
+21:37:35 [INF][            WBA]: Looking for extension modules for WBA...
+21:37:35 [INF][            WBA]: 0 extension modules found
+21:37:36 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+21:37:36 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:12: link '08017ea8-34cd-11ef-8abd-0242ac170003' <object db.mgmt.Connection> key=connection could not be resolved
+21:37:36 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:18: link '000761cc-34cd-11ef-8abd-0242ac170003' <object GrtObject> key=owner could not be resolved
+21:37:36 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:21: link '2bfb9ea6-34cd-11ef-8abd-0242ac170003' <object db.mgmt.Connection> key=connection could not be resolved
+21:37:36 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+21:37:36 [INF][      WBContext]: System info:
  	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.36 CE build 3737333 (64 bit)
 	Configuration Directory: /config/.mysql/workbench
 	Data Directory: /usr/share/mysql-workbench
@@ -31,30 +32,9 @@ No video adapter info available
 
 	Fips mode enabled: no
 
-03:56:58 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
-03:57:38 [ERR][SQL Editor Form]: SqlEditorForm: exception in do_connect method: Exception: Unable to connect to localhost
-03:57:38 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Unable to connect to localhost
-03:57:38 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Unable to connect to localhost
-03:57:38 [ERR][    WQE backend]: Got an exception during connection: Unable to connect to localhost
-03:57:38 [ERR][SQL Editor Form]: SQL editor could not be connected: Unable to connect to localhost
-03:57:38 [ERR][SQL Editor Form]: Your connection attempt failed for user 'root' to the MySQL server at mysql-container:3306:
-  Unable to connect to localhost
-
-Please:
-1 Check that MySQL is running on address mysql-container
-2 Check that MySQL is reachable on port 3306 (note: 3306 is the default, but this can be changed)
-3 Check the user root has rights to connect to mysql-container from your address (MySQL rights define what clients can connect to the server and from which machines) 
-4 Make sure you are both providing a password if needed and using the correct password for mysql-container connecting from the host address you're connecting from
-03:58:35 [ERR][SQL Editor Form]: SqlEditorForm: exception in do_connect method: Exception: Unable to connect to localhost
-03:58:35 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Unable to connect to localhost
-03:58:35 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Unable to connect to localhost
-03:58:35 [ERR][    WQE backend]: Got an exception during connection: Unable to connect to localhost
-03:58:35 [ERR][SQL Editor Form]: SQL editor could not be connected: Unable to connect to localhost
-03:58:35 [ERR][SQL Editor Form]: Your connection attempt failed for user 'root' to the MySQL server at mysql-container:3306:
-  Unable to connect to localhost
-
-Please:
-1 Check that MySQL is running on address mysql-container
-2 Check that MySQL is reachable on port 3306 (note: 3306 is the default, but this can be changed)
-3 Check the user root has rights to connect to mysql-container from your address (MySQL rights define what clients can connect to the server and from which machines) 
-4 Make sure you are both providing a password if needed and using the correct password for mysql-container connecting from the host address you're connecting from
+21:37:36 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
+21:37:36 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-2.autosave
+21:37:36 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-3.autosave
+21:37:36 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-4.autosave
+21:37:36 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-5.autosave
+21:37:36 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
