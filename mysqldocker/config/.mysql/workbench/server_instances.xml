@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<data grt_format="2.0">
+  <value _ptr_="0x55f3303dcee0" type="list" content-type="object" content-struct-name="db.mgmt.ServerInstance">
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="49da1956-34c9-11ef-b1d3-0242ac1e0003" struct-checksum="0x367436e2">
+      <link type="object" struct-name="db.mgmt.Connection" key="connection">1e7956f0-34c9-11ef-b1d3-0242ac1e0003</link>
+      <value _ptr_="0x55f330cb4c90" type="dict" key="loginInfo"/>
+      <value _ptr_="0x55f33043c3e0" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+      <link type="object" struct-name="GrtObject" key="owner">08395e30-34c9-11ef-b1d3-0242ac1e0003</link>
+    </value>
+  </value>
+</data>

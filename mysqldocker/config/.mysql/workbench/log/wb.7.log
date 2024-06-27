@@ -1,0 +1,36 @@
+03:52:29 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /usr/share/mysql-workbench
+	plugin path: /usr/lib/mysql-workbench/plugins
+	struct path: /usr/share/mysql-workbench/grt
+	module path: /usr/lib/mysql-workbench/modules
+	library path: /usr/share/mysql-workbench/libraries
+	user data dir: /config/.mysql/workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+03:52:29 [INF][      WBContext]: WbContext::init
+03:52:30 [INF][            WBA]: Looking for extension modules for WBA...
+03:52:30 [INF][            WBA]: 0 extension modules found
+03:52:30 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+03:52:30 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:5: link '2f00dd02-32a5-11ef-9096-0242ac150003' <object db.mgmt.Connection> key=connection could not be resolved
+03:52:30 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:11: link '71430b3c-3295-11ef-9096-0242ac150003' <object GrtObject> key=owner could not be resolved
+03:52:30 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+03:52:30 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.36 CE build 3737333 (64 bit)
+	Configuration Directory: /config/.mysql/workbench
+	Data Directory: /usr/share/mysql-workbench
+	Cairo Version: 1.16.0
+	OS:  x86_64
+	CPU: 16x AMD Ryzen 7 5800H with Radeon Graphics (3193.917MHz) - 7.69GiB RAM
+No video adapter info available
+	Distribution: Ubuntu 22.04.4 LTS
+
+	Fips mode enabled: no
+
+03:52:30 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
+03:52:46 [WRN][   WBContext UI]: Server instance  has no attached connection, deleting it
+03:53:34 [ERR][ DbConnectPanel]: Unsupported server version: MySQL 8.4.0

@@ -1,0 +1,43 @@
+21:05:49 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /usr/share/mysql-workbench
+	plugin path: /usr/lib/mysql-workbench/plugins
+	struct path: /usr/share/mysql-workbench/grt
+	module path: /usr/lib/mysql-workbench/modules
+	library path: /usr/share/mysql-workbench/libraries
+	user data dir: /config/.mysql/workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+21:05:49 [INF][      WBContext]: WbContext::init
+21:05:50 [INF][            WBA]: Looking for extension modules for WBA...
+21:05:50 [INF][            WBA]: 0 extension modules found
+21:05:50 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+21:05:50 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+21:05:50 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.36 CE build 3737333 (64 bit)
+	Configuration Directory: /config/.mysql/workbench
+	Data Directory: /usr/share/mysql-workbench
+	Cairo Version: 1.16.0
+	OS:  x86_64
+	CPU: 16x AMD Ryzen 7 5800H with Radeon Graphics (3193.917MHz) - 7.69GiB RAM
+No video adapter info available
+	Distribution: Ubuntu 22.04.4 LTS
+
+	Fips mode enabled: no
+
+21:05:50 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
+21:05:50 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
+21:06:22 [WRN][   WBContext UI]: Server instance  has no attached connection, deleting it
+21:06:22 [WRN][   WBContext UI]: Server instance new connection has no attached connection, deleting it
+21:07:40 [INF][SQL Editor Form]: Opened connection '' to MySQL Community Server - GPL version 8.0.37
+21:07:40 [INF][          Admin]: Auto-created dummy instance profile for remote connection 
+21:07:53 [ERR][ sqlide-history]: Can't open SQL history file /config/.mysql/workbench/sql_history/2024-06-27
+21:08:03 [WRN][   mforms.linux]: Unknown column storage type[20]
+21:08:03 [WRN][   mforms.linux]: Unknown column storage type[20]
+21:10:37 [ERR][wb_admin_export.py:process_db:242]: Error from task: ERROR: ASCII '\0' appeared in the statement, but this is not allowed unless option --binary-mode is enabled and mysql is run in non-interactive mode. Set --binary-mode to 1 if ASCII '\0' is expected. Query: 'SQLite format 3'.
+
+21:10:37 [WRN][wb_admin_export.py:process_db:268]: Task exited with code 1
