@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 21:52:28 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+=======
+11:43:45 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+>>>>>>> Stashed changes
 	base dir: /usr/share/mysql-workbench
 	plugin path: /usr/lib/mysql-workbench/plugins
 	struct path: /usr/share/mysql-workbench/grt
@@ -12,6 +16,7 @@
 	Force SW rendering: No
 	Force OpenGL: No
 	quit when done: No
+<<<<<<< Updated upstream
 21:52:28 [INF][      WBContext]: WbContext::init
 21:52:29 [INF][            WBA]: Looking for extension modules for WBA...
 21:52:29 [INF][            WBA]: 0 extension modules found
@@ -22,16 +27,28 @@
 21:52:29 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
 21:52:29 [INF][      WBContext]: System info:
  	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.36 CE build 3737333 (64 bit)
+=======
+11:43:45 [INF][      WBContext]: WbContext::init
+11:43:46 [INF][            WBA]: Looking for extension modules for WBA...
+11:43:46 [INF][            WBA]: 0 extension modules found
+11:43:46 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+11:43:46 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:97: link '62e6ed62-3a8b-11ef-a763-0242ac140004' <object db.mgmt.Connection> key=connection could not be resolved
+11:43:46 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:103: link 'd677c3ba-3a85-11ef-a763-0242ac140004' <object GrtObject> key=owner could not be resolved
+11:43:46 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+11:43:47 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.38 CE build 4270059 (64 bit)
+>>>>>>> Stashed changes
 	Configuration Directory: /config/.mysql/workbench
 	Data Directory: /usr/share/mysql-workbench
-	Cairo Version: 1.16.0
+	Cairo Version: 1.18.0
 	OS:  x86_64
-	CPU: 16x AMD Ryzen 7 5800H with Radeon Graphics (3193.917MHz) - 7.69GiB RAM
+	CPU: 16x AMD Ryzen 7 5800H with Radeon Graphics (3193.922MHz) - 6.70GiB RAM
 No video adapter info available
-	Distribution: Ubuntu 22.04.4 LTS
+	Distribution: Ubuntu 24.04 LTS
 
 	Fips mode enabled: no
 
+<<<<<<< Updated upstream
 21:52:29 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
 21:52:29 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-2.autosave
 21:52:29 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-3.autosave
@@ -54,3 +71,28 @@ No video adapter info available
 21:53:08 [INF][  column_widths]: Initializing column width cache for new_connection
 21:53:13 [WRN][   mforms.linux]: Unknown column storage type[20]
 21:53:13 [WRN][   mforms.linux]: Unknown column storage type[20]
+=======
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-10.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-11.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-12.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-13.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-14.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-15.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-16.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-17.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-18.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-19.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-2.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-20.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-3.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-4.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-5.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-6.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-7.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-8.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-9.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/new_connection-1.autosave
+11:43:47 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/new_connection_1-1.autosave
+11:43:47 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
+>>>>>>> Stashed changes

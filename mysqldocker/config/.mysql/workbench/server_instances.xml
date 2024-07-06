@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <data grt_format="2.0">
+<<<<<<< Updated upstream
   <value _ptr_="0x5562fcccd3f0" type="list" content-type="object" content-struct-name="db.mgmt.ServerInstance">
     <value type="object" struct-name="db.mgmt.ServerInstance" id="3b89bb8a-34cf-11ef-b26b-0242ac1f0003" struct-checksum="0x367436e2">
       <value _ptr_="0x5562fcf799f0" type="dict" key="loginInfo"/>
@@ -37,6 +38,107 @@
         <value type="string" key="sys.sudo"></value>
       </value>
       <value type="string" key="name">new connection 1</value>
+=======
+  <value _ptr_="0x556bd5f924b0" type="list" content-type="object" content-struct-name="db.mgmt.ServerInstance">
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="49da1956-34c9-11ef-b1d3-0242ac1e0003" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6714020" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd67140a0" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="dbdccc72-350a-11ef-a8d4-0242ac1f0003" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6714650" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd67146d0" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="238b591c-350b-11ef-9b0f-0242ac1f0003" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6714e00" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd6714e80" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="5af636b0-350b-11ef-913c-0242ac1f0003" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd67155b0" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd6715630" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="9ebf60a6-350b-11ef-8a07-0242ac1f0003" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6715d60" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd6715de0" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="c0274d30-350b-11ef-9681-0242ac1f0003" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6716510" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd6716590" type="dict" key="serverInfo">
+        <value type="string" key="serverVersion">8.0.37</value>
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="e4e7eca4-350d-11ef-9681-0242ac1f0003" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6716cc0" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd6716d40" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="23da76c2-35c0-11ef-a40d-0242ac1f0003" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6717470" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd67174f0" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="5e2ffdba-35c0-11ef-af68-0242ac1f0003" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6717c20" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd6717ca0" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="ad818002-35c3-11ef-8135-0242ac1f0003" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6738300" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd6738380" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="97e6c464-38ca-11ef-bdb2-0242ac140004" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6738ab0" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd6738b30" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="db66625c-38d0-11ef-8d87-0242ac140004" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6739260" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd67392e0" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="c5f48a42-3a7f-11ef-aa92-0242ac140004" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd6739a10" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd6739a90" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+    </value>
+    <value type="object" struct-name="db.mgmt.ServerInstance" id="6ab643e4-3a8b-11ef-a763-0242ac140004" struct-checksum="0x367436e2">
+      <value _ptr_="0x556bd673a1c0" type="dict" key="loginInfo"/>
+      <value _ptr_="0x556bd673a240" type="dict" key="serverInfo">
+        <value type="int" key="setupPending">1</value>
+      </value>
+      <value type="string" key="name"></value>
+>>>>>>> Stashed changes
     </value>
   </value>
 </data>
