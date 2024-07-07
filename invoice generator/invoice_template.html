@@ -264,15 +264,15 @@ th {
                 <h1>{{ brand_name }}</h1>
                 <img src="7.jpg" alt="Logo" class="brand-logo">
                 <p><strong>تفوتر إلى:</strong></p>
-                <p>{{ company_name }}</p>
-                <p>{{ address }}</p>
+                <p>{{ company }}</p>
+                <p>{{ custom_party_balance }}</p>
             </div>
             <div class="invoice-details">
                 <h2 >فـــــــــاتــــــورة</h2>
                 <h4 >تفاصيل الفاتورة</h4>
                 <p> تاريخ الفاتورة: {{ invoice_date }}</p>
                 <p>تاريخ الاستحقاق: {{ due_date }}</p>
-                <p>رقم الفاتورة: {{ invoice_no }}</p>
+                <p>رقم الفاتورة: {{ name }}</p>
             </div>
         </div>
         
@@ -290,11 +290,11 @@ th {
                 <tbody>
                     {% for item in items %}
                     <tr>
-                        <td>{{ loop.index }}</td>
-                        <td>{{ item.description }}</td>
-                        <td>{{ item.unit_price }}</td>
+                        <td>{{ loop.idx }}</td>
+                        <td>{{ item.item_code }}</td>
+                        <td>{{ item.rate }}</td>
                         <td>{{ item.qty }}</td>
-                        <td>{{ item.total }}</td>
+                        <td>{{ item.base_total }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -303,19 +303,11 @@ th {
 
         <div class="summary-payment">
             <div class="summary-left">
-                <div class="payment-info">
-                    <p><strong>معلومات الدفع:</strong></p>
-                    <p>رقم الحساب: {{ account_no }}</p>
-                    <p>اسم الحساب: {{ account_name }}</p>
-                    <p>تفاصيل البنك: {{ bank_details }}</p>
-                </div>
             </div>
             
             <div class="summary-right">
                 <div class="invoice-summary">
-                    <h4><span class="label">المجموع الفرعي:</span> <span class="value">{{ sub_total }}</span></h4>
-                    <h5><span class="label">الضريبة (5%):</span> <span class="value">{{ tax }}</span></h5>
-                    <h2><span class="label">المجموع الكلي:</span> <span class="value">{{ grand_total }}</span></h2>
+                    <h4><span class="label">المجموع الفرعي:</span> <span class="value">{{ base_total }}</span></h4>
                 </div>
                 
                 <img src="zap-qr-1.png" alt="Logo" class="qr">
@@ -362,15 +354,6 @@ th {
         </div>
                 
                                 
-        <div class="footer">
-            <div class="terms">
-                <h4>الشروط والأحكام:</h4>
-                <h6>{{ terms }}</h6>
-            </div>
-            <div class="thank-you">
-                <h2>شكرًا لك</h2>
-            </div>
-        </div>
                     
 
 
