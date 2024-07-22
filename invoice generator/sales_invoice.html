@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+    <style>
+body {
+    margin: 20px; /* Adjust the margin value as needed */
+    padding: 0;
+    font-family: 'Lateef', serif;
+    color: #464545;
+    background-color: #fff;
+}
+.invoice-test {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.invoice-header_left {
+    width: 50%;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 10px; 
+}
+.invoice-header_right {
+    width: 50%;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 10px; 
+}
+.invoice-header p {
+    margin: 5px;
+    margin-left: 0;
+}        
+
+
+        .brand-logo {
+            width: 200px;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+    .section-header {
+        background-color: #ffffff; /* Light gray background */
+        font-weight: bold;
+        border: hidden;
+    }
+    /* Define styles for section separators */
+
+
+    </style>
+</head>
+<body>
+        <div class="invoice-test">        
+            <div class="invoice-header_left">
+                <img src="logo_em.png" alt="Logo" class="brand-logo">
+                <p>Desouk, Kafr El-Sheikh</p>
+                <p>Dept.Acct.: Ahmed Elsotaery | 01092995002 | ahmed.elsotaery@elfateh.site</p>
+                <p>Dept.Manager: Ahmed Rjb | 01098951400</p>              
+                <p>123 Main Street, Cityville</p>
+            </div>
+            <div class="invoice-header_right">
+                <h2>INVOICE</h2>
+                <p>Invoice No: INV-001</p>
+                <p>Invoice Date: July 1, 2024</p>
+                <p>payment due: July 15, 2024</p>
+                <p>Clinet  : MAXAB MOSTOROD</p>
+            </div>
+            </div>
+        <table>
+            <tr >
+                <th style="width: 5%;">No</th>
+                <th ">Product</th>
+                <th style="width: 15%;">Unit Price</th>
+                <th style="width: 15%;">Quantity</th>
+                <th style="width: 15%;">Amount</th>
+                    </tr>
+            <tr>
+                <td>1</td>
+                <td>Product A</td>
+                <td>$50.00</td>
+                <td>2</td>
+                <td>$100.00</td>
+            </tr>
+
+        
+        </table>
+        <table>
+            <tr class="section-header">
+                <th  style="text-align: right;">Total</th>
+                <td style="border: hidden;">$250.00</td>
+            </tr>
+            <tr class="section-header">
+                <th  style="text-align: right; width: 85%;">Grand Total</th>
+                <td style="border: hidden;">$225.00</td>
+            </tr>
+
+        </table>
+</body>
+</html>

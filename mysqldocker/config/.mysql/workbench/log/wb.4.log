@@ -1,4 +1,8 @@
-21:40:47 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+<<<<<<< Updated upstream
+21:44:29 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+=======
+03:32:21 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+>>>>>>> Stashed changes
 	base dir: /usr/share/mysql-workbench
 	plugin path: /usr/lib/mysql-workbench/plugins
 	struct path: /usr/share/mysql-workbench/grt
@@ -12,36 +16,99 @@
 	Force SW rendering: No
 	Force OpenGL: No
 	quit when done: No
-21:40:47 [INF][      WBContext]: WbContext::init
-21:40:48 [INF][            WBA]: Looking for extension modules for WBA...
-21:40:48 [INF][            WBA]: 0 extension modules found
-21:40:49 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-21:40:49 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-21:40:49 [INF][      WBContext]: System info:
+<<<<<<< Updated upstream
+21:44:29 [INF][      WBContext]: WbContext::init
+21:44:30 [INF][            WBA]: Looking for extension modules for WBA...
+21:44:30 [INF][            WBA]: 0 extension modules found
+21:44:30 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+21:44:30 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:26: link 'f0dfc1f2-34cd-11ef-8693-0242ac1d0003' <object db.mgmt.Connection> key=connection could not be resolved
+21:44:30 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:32: link 'eb2f817a-34cd-11ef-8693-0242ac1d0003' <object GrtObject> key=owner could not be resolved
+21:44:30 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+21:44:30 [INF][      WBContext]: System info:
+=======
+03:32:21 [INF][      WBContext]: WbContext::init
+03:32:22 [INF][            WBA]: Looking for extension modules for WBA...
+03:32:22 [INF][            WBA]: 0 extension modules found
+03:32:22 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+03:32:22 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+03:32:22 [INF][      WBContext]: System info:
+>>>>>>> Stashed changes
  	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.36 CE build 3737333 (64 bit)
 	Configuration Directory: /config/.mysql/workbench
 	Data Directory: /usr/share/mysql-workbench
 	Cairo Version: 1.16.0
 	OS:  x86_64
-	CPU: 16x AMD Ryzen 7 5800H with Radeon Graphics (3193.917MHz) - 7.69GiB RAM
+	CPU: 16x AMD Ryzen 7 5800H with Radeon Graphics (3193.922MHz) - 6.70GiB RAM
 No video adapter info available
 	Distribution: Ubuntu 22.04.4 LTS
 
 	Fips mode enabled: no
 
-21:40:49 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
-21:40:49 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-2.autosave
-21:40:49 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-3.autosave
-21:40:49 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-4.autosave
-21:40:49 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-5.autosave
-21:40:49 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
-21:41:17 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'172.29.0.3' (using password: YES)
-21:41:17 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'172.29.0.3' (using password: YES)
-21:41:17 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'172.29.0.3' (using password: YES)
-21:41:17 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'172.29.0.3' (using password: YES)
-21:41:19 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'172.29.0.3' (using password: YES)
-21:41:19 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'172.29.0.3' (using password: YES)
-21:41:20 [INF][SQL Editor Form]: Opened connection '' to MySQL Community Server - GPL version 8.0.37
-21:41:21 [INF][          Admin]: Auto-created dummy instance profile for remote connection 
-21:41:56 [WRN][   mforms.linux]: Unknown column storage type[20]
-21:41:56 [WRN][   mforms.linux]: Unknown column storage type[20]
+<<<<<<< Updated upstream
+21:44:31 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
+21:44:31 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-2.autosave
+21:44:31 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-3.autosave
+21:44:31 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-4.autosave
+21:44:31 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-5.autosave
+21:44:31 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-6.autosave
+21:44:31 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
+21:45:00 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:00 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:00 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:00 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:02 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:02 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:04 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:04 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:06 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:06 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:09 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:09 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:11 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:11 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:13 [INF][    WQE backend]: User cancelled connection
+21:45:13 [INF][      WBContext]: Connection to  cancelled by user: Cancelled
+21:45:59 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:59 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:59 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:45:59 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:46:05 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:46:05 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:46:08 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:46:08 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:46:10 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:46:10 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:46:41 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:46:41 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'admin'@'172.29.0.3' (using password: YES)
+21:46:48 [INF][    WQE backend]: User cancelled connection
+21:46:48 [INF][      WBContext]: Connection to  cancelled by user: Cancelled
+=======
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-10.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-11.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-12.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-13.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-14.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-15.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-16.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-17.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-18.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-2.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-3.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-4.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-5.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-6.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-7.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-8.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-9.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/new_connection-1.autosave
+03:32:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/new_connection_1-1.autosave
+03:32:22 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
+03:36:31 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'172.20.0.4' (using password: NO)
+03:36:31 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'172.20.0.4' (using password: NO)
+03:36:32 [INF][SQL Editor Form]: Opened connection '' to MySQL Community Server - GPL version 8.0.37
+03:36:32 [INF][  column_widths]: Initializing column width cache for Mysql@mysql_3306
+03:36:32 [INF][          Admin]: Auto-created dummy instance profile for remote connection 
+03:37:18 [WRN][   mforms.linux]: Unknown column storage type[20]
+03:37:18 [WRN][   mforms.linux]: Unknown column storage type[20]
+>>>>>>> Stashed changes
