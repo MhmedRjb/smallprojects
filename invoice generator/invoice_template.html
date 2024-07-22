@@ -1,183 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 20px; 
-            background-color: #f9f9f9; 
-        }
-        .invoice-container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .invoice-header { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            border-bottom: 2px solid #ddd; 
-            padding-bottom: 10px; 
-            margin-bottom: 20px; 
-        }
-        .invoice-header .brand-section {
-            background-color: yellow;
-            padding: 10px;
-        }
-        .invoice-header h2 {
-            margin: 0;
-        }
-        table { 
-            width: 100%; 
-            border-collapse: collapse; 
-            margin-bottom: 20px; 
-        }
-        th, td { 
-            padding: 12px; 
-            text-align: left; 
-            border-bottom: 1px solid #ddd; 
-        }
-        th { 
-            background-color: #f2f2f2; 
-        }
-        .total { 
-            font-weight: bold; 
-        }
-        .contact-info, .terms { 
-            margin-top: 20px; 
-        }
-        .contact-info div, .terms div { 
-            margin: 5px 0; 
-        }
-        .payment-info, .contact-info, .terms {
-            border-top: 2px solid #ddd;
-            padding-top: 10px;
-        }
-        .signature, .thank-you {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .summary-payment {
-            display: flex;
-            justify-content: space-between;
-        }
-        .invoice-summary {
-            width: 45%;
-        }
-        .invoice-summary table, .invoice-summary th, .invoice-summary td {
-            border: none; /* Make the borders invisible */
-        }
-        .payment-info {
-            width: 45%;
-            padding: 10px;
-        }
-        .payment-info p:first-child {
-            background-color: #e0f7fa; /* Light cyan background color */
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-        }
-        .contact-info {
-            padding: 10px;
-        }
-        .contact-info p:first-child {
-            background-color: yellow;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-        }
-        .contact-info div {
-            margin: 5px 0;
-            display: flex;
-            align-items: center;
-        }
-        .contact-info i {
-            margin-right: 10px;
-            color: black;
-        }
-        .bottom-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-top: 20px;
-        }
-        .bottom-section .contact-info {
-            flex: 1;
-        }
-        .bottom-section .signature {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            height: 150px; /* Adjust height as needed */
-        }
-        .bottom-section .signature p {
-            border-top: 2px solid #ddd; /* Add this line to create a border above the signature text */
-            padding-top: 10px; /* Add some padding to separate the text from the border */
-            width: 50%; /* Adjust width as needed */
-            text-align: center; /* Center the text */
-        }
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-top: 20px;
-        }
-        .footer .terms {
-            flex: 1;
-        }
-        .footer .thank-you {
-            flex: 1;
-            text-align: right;
-        }
-        .bottom-thank-you {
-            text-align: right;
-            margin-top: 20px;
-        }
+          @import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+  /* font-family: 'Lateef', serif; */
+
+        
+body {
+    font-family: 'Lateef';
+    margin: 0; 
+    padding: 3.25em;
+    color: #464545;
+    background-color: #f9f9f9;
+    width: 210mm;
+    height: 297mm;
+    text-align: right; 
+    box-sizing: border-box; 
+}
+.brand-logo , .qr {
+    width: 100px; 
+    height: auto; 
+
+}
+
+.invoice-container {
+    margin: auto;
+    padding: 1.25em 2.5em;
+    box-sizing: border-box; 
+}
+
+.invoice-header { 
+    color: #000000;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding-bottom: 0.625em;
+}
+
+.invoice-details { 
+    background-color: #face0d;
+    padding: 0 1.25em 0.9375em 0.9375em; 
+    margin-top: 2em; 
+    
+}
+
+.invoice-header h2 {
+    font-size: 2.25em; 
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0.3em;
+}
+.terms h4 ,.terms h6  {
+    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+}
+
+.invoice-header h1 {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.invoice-header p ,.payment-info p {
+    margin: 0.22em;
+    letter-spacing: 0.05em;
+}
+
+.invoice-header h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.invoice-header p {
+    margin: 0;
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 2em; 
+}
+th, td { 
+    padding: 12px; 
+    text-align: right; 
+    border-bottom: 1px solid #ddd; 
+}
+th { 
+    background-color: #000000;
+    color: #fff; 
+}
+
+
+
+.signature-border {
+    display: inline-block;
+    border-top: 1px solid #000;
+    padding-top: 10px; 
+    width: 50%; 
+}
+
+.summary-payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow flex items to wrap if necessary */
+
+}
+
+
+
+.signature-info {
+    width: 50%;
+    text-align: center;
+}
+
+.signature-info p {
+    display: inline-block;
+    border-top: 1px solid #000; 
+    padding-top: 10px; 
+    width: 150px; 
+    margin: 0 auto; 
+}
+
+
+
+.invoice-summary {
+    width: 100%;
+
+}
+
+.invoice-summary h4, .invoice-summary h5 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ .invoice-summary h2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 10px 10px;
+}
+
+.label {
+    text-align: left;
+    display: inline-block;
+    width: 50%; 
+}
+
+.value {
+    text-align: right;
+}
+
+
+.payment-info p:first-child {
+    background-color: #face0d; 
+    padding: 10px;
+}
+
+ .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.connect-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1;
+}
+.terms {
+    width: 45%;
+}
+
+.thank-you h2 {
+    text-align: right;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.info-item i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+
+
+
+
+.info-item {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 10px;
+}
+
+.info-item i {
+    font-size: 20px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.info-item div {
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.info-item > div > div {
+    margin-right: 10px; 
+    margin-top: -4px;
+    
+}
+
+
+
+
+
+.summary-payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow flex items to wrap if necessary */
+}
+
+.summary-left, .summary-right {
+    flex: 1; /* Equal width for both sections */
+}
+
+
+
+.qr {
+    /* Styling for the image */
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure image is a block element */
+}
+
+
+.signature-info {
+    margin: 0 auto; /* Center the block horizontally */
+    width: 50%; /* Set width as needed */
+    display: block; /* Ensures it behaves as a block-level element */
+}
+
+
+
     </style>
 </head>
 <body>
     <div class="invoice-container">
         <div class="invoice-header">
-            <div class="brand-section">
-                <h2>{{ brand_name }}</h2>
-                <p><strong>Bill To:</strong></p>
-                <p>{{ company_name }}</p>
-                <p>{{ address }}</p>
-            </div>
             <div>
-                <h2>INVOICE</h2>
-                <p><strong>Invoice Date:</strong> {{ invoice_date }}</p>
-                <p><strong>Due Date:</strong> {{ due_date }}</p>
-                <p><strong>Invoice No:</strong> {{ invoice_no }}</p>
+                <h1>{{ brand_name }}</h1>
+                <img src="7.jpg" alt="Logo" class="brand-logo">
+                <p><strong>تفوتر إلى:</strong></p>
+                <p>{{ company }}</p>
+                <p>{{ custom_party_balance }}</p>
+            </div>
+            <div class="invoice-details">
+                <h2 >فـــــــــاتــــــورة</h2>
+                <h4 >تفاصيل الفاتورة</h4>
+                <p> تاريخ الفاتورة: {{ invoice_date }}</p>
+                <p>تاريخ الاستحقاق: {{ due_date }}</p>
+                <p>رقم الفاتورة: {{ name }}</p>
             </div>
         </div>
-
-        <div class="invoice-details">
+        
+        <div >
             <table>
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Product Description</th>
-                        <th>Unit Price</th>
-                        <th>Qty</th>
-                        <th>Total</th>
+                        <th>وصف المنتج</th>
+                        <th>سعر الوحدة</th>
+                        <th>الكمية</th>
+                        <th>الإجمالي</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for item in items %}
                     <tr>
-                        <td>{{ loop.index }}</td>
-                        <td>{{ item.description }}</td>
-                        <td>{{ item.unit_price }}</td>
+                        <td>{{ loop.idx }}</td>
+                        <td>{{ item.item_code }}</td>
+                        <td>{{ item.rate }}</td>
                         <td>{{ item.qty }}</td>
-                        <td>{{ item.total }}</td>
+                        <td>{{ item.base_total }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -185,57 +302,62 @@
         </div>
 
         <div class="summary-payment">
-            <div class="payment-info">
-                <p><strong>Payment Info:</strong></p>
-                <p>Account #: {{ account_no }}</p>
-                <p>Account Name: {{ account_name }}</p>
-                <p>Bank Details: {{ bank_details }}</p>
+            <div class="summary-left">
             </div>
-
-            <div class="invoice-summary">
-                <table>
-                    <tr>
-                        <td>Sub Total</td>
-                        <td>{{ sub_total }}</td>
-                    </tr>
-                    <tr>
-                        <td>Tax (5%)</td>
-                        <td>{{ tax }}</td>
-                    </tr>
-                    <tr class="total">
-                        <td>Grand Total</td>
-                        <td>{{ grand_total }}</td>
-                    </tr>
-                </table>
+            
+            <div class="summary-right">
+                <div class="invoice-summary">
+                    <h4><span class="label">المجموع الفرعي:</span> <span class="value">{{ base_total }}</span></h4>
+                </div>
+                
+                <img src="zap-qr-1.png" alt="Logo" class="qr">
             </div>
         </div>
-
-        <div class="bottom-section">
-            <div class="contact-info">
-                <p><strong>Contact Us:</strong></p>
-                <div><i class="fas fa-phone"></i> {{ phone }}</div>
-                <div><i class="fas fa-globe"></i> {{ website }}</div>
-                <div><i class="fas fa-envelope"></i> {{ email }}</div>
-                <div><i class="fas fa-map-marker-alt"></i> {{ contact_address }}</div>
+            
+        <div class="connect-us">
+            <div class="summary-left">
+                <div class="payment-info">
+                    <p><strong>اتصل بنا:</strong></p>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <div>1234-567-890</div>
+                            <div>1234-561-890</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i> 
+                        <div>
+                            <div>www.folany.com</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <div> your@email.com</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <div>شارع العلاني مدينة فولاني</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="signature">
-                <p>Signature</p>
+            
+            <div class="summary-right">
+                <div class="signature-info">
+                    <p>التوقيع</p>
+                </div>
             </div>
         </div>
+                
+                                
+                    
 
-        <div class="footer">
-            <div class="terms">
-                <p><strong>Terms & Conditions:</strong></p>
-                <div>{{ terms }}</div>
-            </div>
-            <div class="thank-you">
-                <p>Thank You</p>
-            </div>
-        </div>
 
-        <div class="bottom-thank-you">
-            <p>Thank You</p>
-        </div>
+
     </div>
 </body>
 </html>

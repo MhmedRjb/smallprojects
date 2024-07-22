@@ -1,0 +1,167 @@
+[1, 21:07:53] select 1
+LIMIT 0, 1000
+: Running...
+[1, 21:07:53] select 1
+LIMIT 0, 1000
+: Fetching...
+[1, 21:07:53] select 1
+LIMIT 0, 1000
+: 1 row(s) returned
+<<<<<<< Updated upstream
+[1, 21:30:30] select 1
+LIMIT 0, 1000
+: Running...
+[1, 21:30:30] select 1
+LIMIT 0, 1000
+: Fetching...
+[1, 21:30:30] select 1
+LIMIT 0, 1000
+: 1 row(s) returned
+=======
+[1, 05:05:10] show tables: Running...
+[1, 05:05:10] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[2, 05:05:11] show tables: Running...
+[2, 05:05:11] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[3, 05:05:12] show tables: Running...
+[3, 05:05:12] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[4, 05:05:13] show tables: Running...
+[4, 05:05:13] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[5, 05:05:13] show tables: Running...
+[5, 05:05:13] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[6, 05:05:13] show tables: Running...
+[6, 05:05:13] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[7, 05:05:14] show tables: Running...
+[7, 05:05:14] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[8, 05:16:25] use mydatabse: Running...
+[8, 05:16:25] use mydatabse: Error Code: 1049. Unknown database 'mydatabse'
+[9, 05:16:27] use mydatabse: Running...
+[9, 05:16:27] use mydatabse: Error Code: 1049. Unknown database 'mydatabse'
+[10, 05:16:27] use mydatabse: Running...
+[10, 05:16:27] use mydatabse: Error Code: 1049. Unknown database 'mydatabse'
+[11, 05:16:28] use mydatabse: Running...
+[11, 05:16:28] use mydatabse: Error Code: 1049. Unknown database 'mydatabse'
+[12, 05:16:35] show tables: Running...
+[12, 05:16:35] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[13, 05:16:45] show tables: Running...
+[13, 05:16:45] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[14, 05:16:45] show tables: Running...
+[14, 05:16:45] show tables: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[15, 05:16:58] select 1
+LIMIT 0, 1000
+: Running...
+[15, 05:16:58] select 1
+LIMIT 0, 1000
+: Fetching...
+[15, 05:16:58] select 1
+LIMIT 0, 1000
+: 1 row(s) returned
+[16, 05:17:10] select * from sales_order
+LIMIT 0, 1000
+: Running...
+[16, 05:17:10] select * from sales_order
+LIMIT 0, 1000
+: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[17, 05:17:11] select * from sales_order
+LIMIT 0, 1000
+: Running...
+[17, 05:17:11] select * from sales_order
+LIMIT 0, 1000
+: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[18, 05:17:11] select * from sales_order
+LIMIT 0, 1000
+: Running...
+[18, 05:17:11] select * from sales_order
+LIMIT 0, 1000
+: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[19, 05:17:11] select * from sales_order
+LIMIT 0, 1000
+: Running...
+[19, 05:17:11] select * from sales_order
+LIMIT 0, 1000
+: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[1, 05:18:59] select * from Sales_orders
+LIMIT 0, 1000
+: Running...
+[1, 05:18:59] select * from Sales_orders
+LIMIT 0, 1000
+: Fetching...
+[1, 05:18:59] select * from Sales_orders
+LIMIT 0, 1000
+: 29 row(s) returned
+[2, 05:19:51] select * from Sales_orders
+LIMIT 0, 1000
+: Running...
+[2, 05:19:51] select * from Sales_orders
+LIMIT 0, 1000
+: Fetching...
+[2, 05:19:51] select * from Sales_orders
+LIMIT 0, 1000
+: 29 row(s) returned
+[3, 05:20:02] select * from Product_sales_orders
+LIMIT 0, 1000
+: Running...
+[3, 05:20:02] select * from Product_sales_orders
+LIMIT 0, 1000
+: Fetching...
+[3, 05:20:02] select * from Product_sales_orders
+LIMIT 0, 1000
+: 36 row(s) returned
+[4, 05:35:45] select * from Product_sales_orders where SALES_ORDER_ID in (2,3,14,15)
+LIMIT 0, 1000
+: Running...
+[4, 05:35:45] select * from Product_sales_orders where SALES_ORDER_ID in (2,3,14,15)
+LIMIT 0, 1000
+: Fetching...
+[4, 05:35:45] select * from Product_sales_orders where SALES_ORDER_ID in (2,3,14,15)
+LIMIT 0, 1000
+: 3 row(s) returned
+[5, 05:36:08] select * from Product_sales_orders where SALES_ORDER_ID in (2,3,14,15,16,20,21,22)
+LIMIT 0, 1000
+: Running...
+[5, 05:36:08] select * from Product_sales_orders where SALES_ORDER_ID in (2,3,14,15,16,20,21,22)
+LIMIT 0, 1000
+: Fetching...
+[5, 05:36:08] select * from Product_sales_orders where SALES_ORDER_ID in (2,3,14,15,16,20,21,22)
+LIMIT 0, 1000
+: 9 row(s) returned
+[1, 03:01:33] use alx: Running...
+[1, 03:01:33] use alx: 0 row(s) affected
+[2, 03:01:41] show tables: Running...
+[2, 03:01:41] show tables: Fetching...
+[2, 03:01:41] show tables: 0 row(s) returned
+[3, 03:01:50] EXPLAIN show tables: Executing 
+[3, 03:01:50] EXPLAIN show tables: Error Code: 1064
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show tables' at line 1
+[1, 23:27:20] select 1
+LIMIT 0, 1000
+: Running...
+[1, 23:27:20] select 1
+LIMIT 0, 1000
+: Fetching...
+[1, 23:27:20] select 1
+LIMIT 0, 1000
+: 1 row(s) returned
+[1, 00:12:21] use md_water_services: Running...
+[1, 00:12:21] use md_water_services: 0 row(s) affected
+[2, 00:12:23] use md_water_services: Running...
+[2, 00:12:23] use md_water_services: 0 row(s) affected
+[3, 00:12:24] use md_water_services: Running...
+[3, 00:12:24] use md_water_services: 0 row(s) affected
+[4, 00:12:32] show tables: Running...
+[4, 00:12:32] show tables: Fetching...
+[4, 00:12:32] show tables: 8 row(s) returned
+>>>>>>> Stashed changes
