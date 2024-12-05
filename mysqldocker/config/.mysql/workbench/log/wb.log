@@ -1,4 +1,4 @@
-21:52:28 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+02:14:20 [INF][   WBContext UI]: Initializing workbench context UI with these values:
 	base dir: /usr/share/mysql-workbench
 	plugin path: /usr/lib/mysql-workbench/plugins
 	struct path: /usr/share/mysql-workbench/grt
@@ -12,45 +12,189 @@
 	Force SW rendering: No
 	Force OpenGL: No
 	quit when done: No
-21:52:28 [INF][      WBContext]: WbContext::init
-21:52:29 [INF][            WBA]: Looking for extension modules for WBA...
-21:52:29 [INF][            WBA]: 0 extension modules found
-21:52:29 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-21:52:29 [WRN][            grt]: /config/.mysql/workbench/connections.xml:23: link '232e1a72-34cf-11ef-b26b-0242ac1f0003' <object GrtObject> key=owner could not be resolved
-21:52:29 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:5: link '2d19b762-34cf-11ef-b26b-0242ac1f0003' <object db.mgmt.Connection> key=connection could not be resolved
-21:52:29 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:11: link '232e1a72-34cf-11ef-b26b-0242ac1f0003' <object GrtObject> key=owner could not be resolved
-21:52:29 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
-21:52:29 [INF][      WBContext]: System info:
- 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.36 CE build 3737333 (64 bit)
+02:14:20 [INF][      WBContext]: WbContext::init
+02:14:21 [INF][            WBA]: Looking for extension modules for WBA...
+02:14:21 [INF][            WBA]: 0 extension modules found
+02:14:22 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/connections.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:  ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/connections.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:   ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/connections.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:    ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/connections.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:     ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/connections.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:      ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/connections.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:       ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/connections.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:        ^
+
+02:14:22 [WRN][            grt]: Error loading '/config/.mysql/workbench/connections.xml': Error unserializing GRT data from /config/.mysql/workbench/connections.xml: unable to parse XML file /config/.mysql/workbench/connections.xml	
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/server_instances.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:  ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/server_instances.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:   ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/server_instances.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:    ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/server_instances.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:     ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/server_instances.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:      ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/server_instances.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:       ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/server_instances.xml:3: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: StartTag: invalid element name
+
+02:14:22 [ERR][  XML Functions]: LibXml: <<<<<<< Updated upstream
+
+02:14:22 [ERR][  XML Functions]: LibXml:        ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/server_instances.xml:144: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: Opening and ending tag mismatch: value line 27 and data
+
+02:14:22 [ERR][  XML Functions]: LibXml: </data>
+
+02:14:22 [ERR][  XML Functions]: LibXml:        ^
+
+02:14:22 [ERR][  XML Functions]: LibXml: /config/.mysql/workbench/server_instances.xml:145: 
+02:14:22 [ERR][  XML Functions]: LibXml: parser 
+02:14:22 [ERR][  XML Functions]: LibXml: error : 
+02:14:22 [ERR][  XML Functions]: LibXml: Premature end of data in tag value line 4
+
+02:14:22 [ERR][  XML Functions]: LibXml: 
+
+02:14:22 [ERR][  XML Functions]: LibXml: ^
+
+02:14:22 [WRN][            grt]: Error loading '/config/.mysql/workbench/server_instances.xml': Error unserializing GRT data from /config/.mysql/workbench/server_instances.xml: unable to parse XML file /config/.mysql/workbench/server_instances.xml	
+02:14:22 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+02:14:22 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.38 CE build 4270059 (64 bit)
 	Configuration Directory: /config/.mysql/workbench
 	Data Directory: /usr/share/mysql-workbench
-	Cairo Version: 1.16.0
+	Cairo Version: 1.18.0
 	OS:  x86_64
-	CPU: 16x AMD Ryzen 7 5800H with Radeon Graphics (3193.917MHz) - 7.69GiB RAM
+	CPU: 16x AMD Ryzen 7 5800H with Radeon Graphics (3193.922MHz) - 6.70GiB RAM
 No video adapter info available
-	Distribution: Ubuntu 22.04.4 LTS
+	Distribution: Ubuntu 24.04 LTS
 
 	Fips mode enabled: no
 
-21:52:29 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
-21:52:29 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-2.autosave
-21:52:29 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-3.autosave
-21:52:29 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-4.autosave
-21:52:29 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-5.autosave
-21:52:29 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-6.autosave
-21:52:29 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-7.autosave
-21:52:29 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
-21:52:38 [ERR][SQL Editor Form]: SqlEditorForm: exception in do_connect method: Exception: Unable to connect to localhost
-21:52:38 [WRN][SQL Editor Form]: Unable to connect to localhost
-21:52:38 [INF][SQL Editor Form]: Error 2003 connecting to server, assuming server is down and opening editor with no connection
-21:52:38 [INF][SQL Editor Form]: Error 2003 connecting to server, assuming server is down and opening editor with no connection
-21:52:38 [INF][  column_widths]: Initializing column width cache for new_connection_1
-21:52:38 [ERR][wb_admin_control.py:init:307]: Error connecting to MySQL: Unable to connect to localhost (code 2003)
-21:52:38 [ERR][wb_admin_control.py:server_polling_thread:561]: Error creating SQL connection for monitoring: MySQLError('Unable to connect to localhost (code 2003)')
-21:52:38 [INF][wb_admin_control.py:query_server_installation_info:858]: Currently connected to MySQL server version 'unknown', conn status = None, active plugins = []
-21:53:05 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'172.31.0.3' (using password: NO)
-21:53:05 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'172.31.0.3' (using password: NO)
-21:53:08 [INF][SQL Editor Form]: Opened connection 'new connection' to MySQL Community Server - GPL version 8.0.37
-21:53:08 [INF][  column_widths]: Initializing column width cache for new_connection
-21:53:13 [WRN][   mforms.linux]: Unknown column storage type[20]
-21:53:13 [WRN][   mforms.linux]: Unknown column storage type[20]
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-1.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-10.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-11.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-12.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-13.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-14.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-15.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-16.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-17.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-18.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-19.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-2.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-20.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-3.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-4.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-5.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-6.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-7.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-8.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/-9.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/new_connection-1.autosave
+02:14:22 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/new_connection_1-1.autosave
+02:14:23 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
